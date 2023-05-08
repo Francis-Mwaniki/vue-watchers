@@ -52,6 +52,13 @@ export default {
 
 </template>
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+*{
+  font-family: 'Oswald', sans-serif;
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
   body{
     background-color:#013d;
     color:white;
