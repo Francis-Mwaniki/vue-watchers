@@ -51,7 +51,8 @@ export default {
     Ask a yes/no question:
     <input v-model="question" />
   </p>
-     <p>{{ answer }}</p>
+  <p class="">hint: include a "?"</p>
+     <p class="ans">{{ answer }}</p>
   </div>
 
 </template>
@@ -83,6 +84,12 @@ export default {
     color:black;
     padding:10px;
     margin: 10px;
+  }
+  .ans{
+   border:1px dashed;
+    padding:30px;
+    border-radius:2px;
+    margin-top:3px;
   }
   .main{
     display:flex;
