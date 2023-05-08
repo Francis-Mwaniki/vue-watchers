@@ -41,7 +41,7 @@ export default {
 <template>
  <div class="main">
    <h1 class="main-2">
-     <span>The Watchers</span> <img src="https://img.icons8.com/ios-filled/50/null/ophthalmology.png"/>
+     <span>The Watchers</span> <img src="https://img.icons8.com/ios-filled/50/000000/ophthalmology.png"/>
    </h1>
     <p class="">
     Ask a yes/no question:
