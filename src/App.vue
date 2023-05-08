@@ -61,7 +61,8 @@ export default {
    
   </div>
   <!-- footer -->
-  <div style="text-align:center;margin-top:20px; display:flex; flex-direction: row;">
+  <div style="text-align:center;margin-top:20px; display:flex; flex-direction: row; align-items:center;
+    justify-content:center; margin:auto;">
     <span>😂</span><span>😂</span><span>😂</span><span>😂</span>
   </div>
 </template>
