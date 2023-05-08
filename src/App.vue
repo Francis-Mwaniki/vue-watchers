@@ -41,7 +41,7 @@ export default {
 <template>
  <div class="main">
    <h1 class="main-2">
-     <span>The Watchers</span> <img src="https://img.icons8.com/ios/50/null/visible--v1.png"/>
+     <span>The Watchers</span> <img src="./icons8.png"/>
    </h1>
     <p class="">
     Ask a yes/no question:
