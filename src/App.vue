@@ -47,6 +47,7 @@ export default {
 </svg>
 
    </h1>
+   <p class="ans">{{ answer }}</p>
     <p class="">
     Ask a yes/no question:
     <input v-model="question" />
@@ -57,7 +58,7 @@ export default {
 </svg>
 
   hint: include a "?"</p>
-     <p class="ans">{{ answer }}</p>
+   
   </div>
 
 </template>
