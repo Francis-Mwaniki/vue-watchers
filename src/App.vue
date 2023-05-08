@@ -60,7 +60,10 @@ export default {
   hint: include a "?"</p>
    
   </div>
-
+  <!-- footer -->
+  <div style="text-align:center;margin-top:20px; display:flex; flex-direction: row;">
+    <span>😂</span><span>😂</span><span>😂</span><span>😂</span>
+  </div>
 </template>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
