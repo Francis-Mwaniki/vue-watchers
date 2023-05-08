@@ -17,18 +17,18 @@ export default {
   methods: {
     async getAnswer() {
       setTimeout(()=>{
-       this.answer = 'Thinking...' 
+       this.answer = 'Thinking...' + '🤔'
       },1000)
       setTimeout(()=>{
-        this.answer = 'Wait a moment...' 
+        this.answer = 'Wait a moment...' + '🤔'
         },2000)
       setTimeout(()=>{
-        this.answer = 'Almost there...' 
+        this.answer = 'Almost there ...' + '🤔' 
         },3000)
         setTimeout(async()=>{
           try {
         const res = await fetch('https://yesno.wtf/api')
-        this.answer ="Your answer is -:"+ (await res.json()).answer
+        this.answer ="Your answer is -:"+ (await res.json()).answer +"🎉"
       } catch (error) {
         this.answer = 'Error! Could not reach the API. ' + error
       }
@@ -50,7 +50,7 @@ export default {
    <p class="ans">{{ answer }}</p>
     <p class="">
     Ask a yes/no question:
-    <input v-model="question" />
+    <input v-model="question" placeholder="Enter Quiz.😁" />
   </p>
   <p style="text-align:center;">
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
