@@ -28,7 +28,7 @@ export default {
         setTimeout(async()=>{
           try {
         const res = await fetch('https://yesno.wtf/api')
-        this.answer = (await res.json()).answer
+        this.answer = `Your answer is -: '${await res.json().answer}'`
       } catch (error) {
         this.answer = 'Error! Could not reach the API. ' + error
       }
@@ -40,8 +40,8 @@ export default {
 
 <template>
  <div class="main">
-   <h1>
-     The Watchers
+   <h1 class="main-2">
+     <span>The Watchers</span> <img src="https://img.icons8.com/ios-filled/50/null/ophthalmology.png"/>
    </h1>
     <p class="">
     Ask a yes/no question:
@@ -62,6 +62,14 @@ export default {
   body{
     background-color:#013d;
     color:white;
+  }
+  .main-2{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:40px;
+    flex-direction:row;
+    margin-bottom:20px;
   }
   input{
     background-color:pink;
