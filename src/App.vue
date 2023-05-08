@@ -28,7 +28,7 @@ export default {
         setTimeout(async()=>{
           try {
         const res = await fetch('https://yesno.wtf/api')
-        this.answer ="Your answer is -:"+ (await res.json()).answer +"🎉"
+        this.answer ="Your answer is -:"+ (await res.json()).answer=='yes'? "🎉" : "❌"
       } catch (error) {
         this.answer = 'Error! Could not reach the API. ' + error
       }
