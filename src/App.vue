@@ -18,13 +18,21 @@ export default {
     async getAnswer() {
       setTimeout(()=>{
        this.answer = 'Thinking...' 
-      },2000)
-      try {
+      },1000)
+      setTimeout(()=>{
+        this.answer = 'Wait a moment...' 
+        },2000)
+      setTimeout(()=>{
+        this.answer = 'Almost there...' 
+        },3000)
+        setTimeout(async()=>{
+          try {
         const res = await fetch('https://yesno.wtf/api')
         this.answer = (await res.json()).answer
       } catch (error) {
         this.answer = 'Error! Could not reach the API. ' + error
       }
+          },5000)
     }
   }
 }
